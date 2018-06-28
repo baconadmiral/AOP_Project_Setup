@@ -2,13 +2,8 @@
 
 Download node js, it should include NPM
 
-Download this repo, navigate to the folder and run these commands
-
-npm init
-npm install --save-dev webpack
-npm install --save-dev webpack-cli
+Clone this repository, navigate to the AOP_Project_Setup folder and run this command
 
 npm install
 
-
-remove the url, bugs and homepage sections in the package.json
+Done :)
