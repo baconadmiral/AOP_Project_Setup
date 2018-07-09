@@ -22,9 +22,14 @@ module.exports = {
     path: __dirname + "/js",
     filename: "scripts.min.js"
   },
+  devServer: {
+    hot: true
+  },
   plugins: debug ? [] : [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
-  ],
+  ]
+
 };

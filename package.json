@@ -4,9 +4,9 @@
   "description": "Art of the Possible App in PWA!",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config.js",
     "mocha-help": "mocha -h",
-    "dev": "webpack-dev-server --content-base src --inline --hot",
+    "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,9 +16,15 @@
     "hapi": "^17.5.2",
     "mocha": "^5.0.1",
     "sinon": "^4.0.1",
-    "webpack": "^1.15.0",
+    "webpack": "3.5.3",
     "webpack-cli": "^3.0.8",
-    "should": "^13.2.1"
+    "should": "^13.2.1",
+    "css-loader": "^0.28.0",
+    "extract-loader": "^1.0.2",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^6.0.4",
+    "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
     "bootstrap": "4.1.1",
@@ -27,7 +33,7 @@
     "easeljs": "^1.0.2",
     "jquery": "^3.3.1",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "7.1.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-react-html-attrs": "^2.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -38,6 +44,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.1"
   }
 }
