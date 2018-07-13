@@ -1,8 +1,12 @@
 //@flow
 
-export function foo(x: ?number): string {
+function foo(x: number): number {
   if (x) {
     return x;
   }
-  return "default string";
+  return 0;
 }
+
+export var bar = "SOMETHING";
+
+export default foo;
